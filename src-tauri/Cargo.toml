@@ -1,0 +1,21 @@
+[package]
+name = "book-indexer-react"
+version = "0.1.0"
+description = "A Tauri App to index EPUBs and PDFs"
+authors = ["you"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0", features = [] }
+tauri-plugin-dialog = "2.0.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+walkdir = "2.4"
+epub = "3.1"
+pdf-extract = "0.7"
+html2text = "0.12"
+regex = "1.10"
+lopdf = "0.32"
